@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/96c02e8d2e.js"
+    crossorigin="anonymous"></script>
+    <style>
+    .mp{
+        position: absolute;
+        width: 80%;
+        margin-left: 50px;
+        display: flex;
+        height: 80px;
+        align-items: center;
+        gap: 20px;
+        background-color: rgb(0, 0, 0);
+        font-family: 'roboto', sans-serif;
+        overflow: hidden;
+        padding-left: 20px;
+        color: silver;
+        bottom: 10px;
+    }
+    
+    .disappear{
+        opacity: 1;
+    }
+    .snan{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 400px;
+        gap: 10px;
+    }
+    .songname,.artist{
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .songname{
+        font-size: 15px;
+        font-weight:bolder;
+    }
+    
+    .artist{
+        font-size: 15px;
+        font-weight: bold;
+        background-color: rgb(0, 0, 0);
+    }
+    .disk{
+        
+       position: absolute; 
+       display: flex;
+       width: 65px;
+       height: 65px;
+       border-radius: 50%;
+       animation: rotate 20s linear infinite;
+       animation-play-state: paused;
+       right: 2%;
+       top:10%;
+       
+    }
+    .disk::before{
+        content: '';
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: black;
+    
+    }
+    .disk.play{
+        animation-play-state: running;
+    }
+    .disk img{
+        border-radius: 50%;
+        object-fit: contain;
+    }
+    
+    
+    .seekbar{
+         width: 500px;
+         height: 3px;
+         border-radius: 10px;
+         background-color: silver;
+         cursor: pointer;
+    }
+     .seekbar::-webkit-slider-thumb{
+        -webkit-appearance: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: silver;
+     }
+     .controls{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        gap: 20px;
+     }
+     .playbutton{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: none;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        background-color: black;
+     }
+     .playbutton span{
+        position: absolute;
+        top: 13%;
+        left: 29%;
+        border-radius: 2px;
+        color: silver;
+        font-size: 30px;
+        background-color: black;
+        
+     }
+    .backward,.forward{
+        width: 20px;
+        height: 20px ;
+        border-radius: 50%;
+        border: none;
+        color: silver;
+        background-color: black;
+    
+     }
+     .backward i,.forward i{
+           font-size: 20px;
+            font-weight: bolder;
+     }
+    </style>
+</head>
+<body>
+    <div class="mp disappear">
+        <div class="snan">
+            <h1 class="songname">Song</h1>
+            <p class="artist" style="background-color: black;">artist</p>
+        </div>
+        <div class="spppn">
+            <input type="range" value="0" class="seekbar">
+            <span class="currenttime">00:00</span>
+            <span> / </span>
+            <span class="songtime">00:00</span>
+            <div class="controls">
+                <button class="backward"><i
+                        class="fa-solid fa-angles-left"></i></button>
+                <button class="playbutton pause">
+                    <span  class="pcb" ><i class="fa-solid fa-play"></i></span>
+                    <span class="plb"><i class="fa-solid fa-pause"></i></span>
+                </button>
+                <button class="forward"><i
+                        class="fa-solid fa-angles-right"></i></button>
+            </div>
+            <div class="disk pause"> <img src="disk.webp" alt=""></div>
+        </div>
+    </div>
+</body>
+</html>

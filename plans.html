@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Premium Plans</title>
+    <script src="https://kit.fontawesome.com/96c02e8d2e.js"
+     crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #FFFFFF;
+        }
+        header{
+            display: flex;
+            padding: 10px;
+            width: 98%;
+            height: 60px;
+            top:0;
+            background-color: black;
+        }
+        .logo{
+            width: 35px;
+            height: 35px;
+            background-color: rgb(0, 0, 0);
+            margin-top: 15px;
+            margin-left: 25px;
+        }
+        
+        .logo img{
+            margin: 0;
+        }
+        .h1{
+            margin-top: 13px;
+            color: #fff;
+            margin-left: 10px;
+        }
+        
+        header a i{
+            font-size: 25px;
+            margin-left: 23px;
+            margin-top:20px;
+            color: #fff;
+        }
+        
+        header a i:hover{
+              color: #22ff00;
+              transform: scale(1.2);
+        }
+        .a{
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        nav ul{
+            margin-left: 600px;
+        }
+        .nav ul li{
+            display: inline-block;
+            list-style: none;
+            margin-left: 20px;
+        }
+        .a:hover{
+            color: #22ff00;
+            font-weight: 600;
+        }
+        .login{
+            border-radius: 50px;
+            border: solid white 2px;
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: bold;
+            color: white;
+            padding: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .login:hover{
+            background-color: #fff;
+            color: black;
+        }
+        .plans {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+            padding: 20px;
+        }
+        .plan {
+            background-color: #1E1E1E;
+            border: 1px solid #333;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+        .plan h3 {
+            margin-top: 0;
+        }
+        .plan p {
+            margin: 10px 0;
+        }
+        .plan ul {
+            list-style: none;
+            padding: 0;
+        }
+        .plan ul li {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .plan ul li svg {
+            margin-right: 10px;
+            fill: #1db954;
+        }
+        .button {
+            display: inline-block;
+            background-color: #1db954;
+            color: #121212;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #333;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #666;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #888;
+        }
+    </style></head>
+<body>
+    <header>
+        <img class="logo" src="spotify-white-icon.png" alt>
+        <h1 class="h1">Spotify</h1>
+        <a href="index.html"><i
+            class="fa-solid fa-house"></i></a>
+      <a href="search.html"><i
+            class="fa-solid fa-magnifying-glass"></i></a>
+
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a class="a" href="premium.html">Premium</a></li>
+                    <li><a class="a" href="support.html">Support</a></li>
+                    <li><a class="a" href="dowload.html">Download</a></li>
+                    <li><a class="a" target="main"
+                            href="login.html">Sign
+                            up</a></li>
+                    <li><a class="login" href="login.html">Log in</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="plans">
+        <div class="plan">
+            <h3>Mini</h3>
+            <p>₹7 for 1 day</p>
+            <ul>
+                <li>
+                    <svg height="24" width="24" viewBox="0 0 24 24"><path d="M21.707 4.805a1 1 0 0 1 0 1.414L8.024 19.902l-5.731-5.73a1 1 0 1 1 1.414-1.415l4.317 4.317L20.293 4.805a1 1 0 0 1 1.414 0z"></path></svg>
+                    1 mobile-only Premium account
+                </li>
+                <li>
+                    <svg height="24" width="24" viewBox="0 0 24 24"><path d="M21.707 4.805a1 1 0 0 1 0 1.414L8.024 19.902l-5.731-5.73a1 1 0 1 1 1.414-1.415l4.317 4.317L20.293 4.805a1 1 0 0 1 1.414 0z"></path></svg>
+                    Offline listening of up to 30 songs on 1 device
+                </li>
+                <li>
+                    <svg height="24" width="24" viewBox="0 0 24 24"><path d="M21.707 4.805a1 1 0 0 1 0 1.414L8.024 19.902l-5.731-5.73a1 1 0 1 1 1.414-1.415l4.317 4.317L20.293 4.805a1 1 0 0 1 1.414 0z"></path></svg>
+                    One-time payment
+                </li>
+                <li>
+                    <svg height="24" width="24" viewBox="0 0 24 24"><path d="M21.707 4.805a1 1 0 0 1 0 1.414L8.024 19.902l-5.731-5.73a1 1 0 1 1 1.414-1.415l4.317 4.317L20.293 4.805a1 1 0 0 1 1.414 0z"></path></svg>
+                    Basic audio quality
+                </li>
+            </ul>
+            <a href="https://www.spotify.com/in-en/plan/mini/" class="button">Get Premium Mini</a>
+        </div>
+
+        <div class="plan">
+            <h3>Individual</h3>
+            <p>₹119 for 2 months</p>
+            <p>₹119 / month after</p>
+            <ul>
+                <li>
+                    <svg height="24" width="24" viewBox="0 0 24 24"><path d="M21.707 4.805a1 1 0 0 1 0 1.414L8.024 19.902l-5.731-5.73a1 1 0 1 1 1.414-1.415l4.317 4.317L20.293 4.805a1 1 0 0 1 1.414 0z"></path></svg>
+                    1 Premium account
+                </li>
+                <li>
+                    <svg height="24" width="24" viewBox="0 0 24 24"><path d="M21.707 4.805a1 1 0 0 1 0 1.414L8.024 19.902l-5.731-5.73a1 1 0 1 1 1.414-1.415l4.317 4.317L20.293 4.805a1 1 0 0 1 1.414 0z"></path></svg>
+                    Cancel anytime
+                </li>
+                <li>
+                    <svg height="24" width="24" viewBox="0 0 24 24"><path d="M21.707 4.805a1 1 0 0 1 0 1.414L8.024 19.902l-5.731-5.73a1 1 0 1 1 1.414-1.415l4.317 4.317L20.293 4.805a1 1 0 0 1 1.414 0z"></path></svg>
+                    Subscribe or one-time payment
+                </li>
+            </ul>
+            <a href="https://www.spotify.com/in-en/plan/individual/" class="button">Get Premium Individual</a>
+        </div>
+
+        <div class="plan">
+            <h3>Duo</h3>
+            <p>₹149 for 2 months</p>
+            <p>₹149 / month after</p>
+            <ul>
+                <li>
+                    <svg height="24" width="24" viewBox="0 0 24 24"><path d="M21.707 4.805a1 1 0 0 1 0 1.414L8.024 19.902l-5.731-5.73a1 1 0 1 1 1.414-1.415l4.317 4.317L20.293 4.805a1 1 0 0 1 1.414 0z"></path></svg>
+                    2 Premium accounts
+                </li>
+                <li>
+                    <svg height="24" width="24" viewBox="0 0 24 24"><path d="M21.707 4.805a1 1 0 0 1 0 1.414L8.024 19.902l-5.731-5.73a1 1 0 1 1 1.414-1.415l4.317 4.317L20.293 4.805a1 1 0 0 1 1.414 0z"></path></svg>
+                    For couples living together
+                </li>
+                <li>
+                    <svg height="24" width="24" viewBox="0 0 24 24"><path d="M21.707 4.805a1 1 0 0 1 0 1.414L8.024 19.902l-5.731-5.73a1 1 0 1 1 1.414-1.415l4.317 4.317L20.293 4.805a1 1 0 0 1 1.414 0z"></path></svg>
+                    Cancel anytime
+                </li>
+                <li>
+                    <svg height="24" width="24" viewBox="0 0 24 24"><path d="M21.707 4.805a1 1 0 0 1 0 1.414L8.024 19.902l-5.731-5.73a1 1 0 1 1 1.414-1.415l4.317 4.317L20.293 4.805a1 1 0 0 1 1.414 0z"></path></svg>
+                    Subscribe or one-time payment
+                </li>
+            </ul>
+            <a href="https://www.spotify.com/in-en/plan/duo/" class="button">Get Premium Duo</a>
+        </div>
+
+        <div class="plan">
+            <h3>Student</h3>
+            <p>₹59 for 2 months</p>
+            <p>₹59 / month after</p>
+            <ul>
+                <li>
+                    <svg height="24" width="24" viewBox="0 0 24 24"><path d="M21.707 4.805a1 1 0 0 1 0 1.414L8.024 19.902l-5.731-5.73a1 1 0 1 1 1.414-1.415l4.317 4.317L20.293 4.805a1 1 0 0 1 1.414 0z"></path></svg>
+                    1 Premium account
+                </li>
+                <li>
+                    <svg height="24" width="24" viewBox="0 0 24 24"><path d="M21.707 4.805a1 1 0 0 1 0 1.414L8.024 19.902l-5.731-5.73a1 1 0 1 1 1.414-1.415l4.317 4.317L20.293 4.805a1 1 0 0 1 1.414 0z"></path></svg>
+                    For university students
+                </li>
+                <li>
+                    <svg height="24" width="24" viewBox="0 0 24 24"><path d="M21.707 4.805a1 1 0 0 1 0 1.414L8.024 19.902l-5.731-5.73a1 1 0 1 1 1.414-1.415l4.317 4.317L20.293 4.805a1 1 0 0 1 1.414 0z"></path></svg>
+                    Cancel anytime
+                </li>
+                <li>
+                    <svg height="24" width="24" viewBox="0 0 24 24"><path d="M21.707 4.805a1 1 0 0 1 0 1.414L8.024 19.902l-5.731-5.73a1 1 0 1 1 1.414-1.415l4.317 4.317L20.293 4.805a1 1 0 0 1 1.414 0z"></path></svg>
+                    Subscribe or one-time payment
+                </li>
+            </ul>
+            <a href="https://www.spotify.com/in-en/plan/student/" class="button">Get Premium Student</a>
+        </div>
+
+        <div class="plan">
+            <h3>Family</h3>
+            <p>₹179 for 2 months</p>
+            <p>₹179 / month after</p>
+            <ul>
+                <li>
+                    <svg height="24" width="24" viewBox="0 0 24 24"><path d="M21.707 4.805a1 1 0 0 1 0 1.414L8.024 19.902l-5.731-5.73a1 1 0 1 1 1.414-1.415l4.317 4.317L20.293 4.805a1 1 0 0 1 1.414 0z"></path></svg>
+                    6 Premium accounts
+                </li>
+                <li>
+                    <svg height="24" width="24" viewBox="0 0 24 24"><path d="M21.707 4.805a1 1 0 0 1 0 1.414L8.024 19.902l-5.731-5.73a1 1 0 1 1 1.414-1.415l4.317 4.317L20.293 4.805a1 1 0 0 1 1.414 0z"></path></svg>
+                    Family Mix: shared playlist
+                </li>
+                <li>
+                    <svg height="24" width="24" viewBox="0 0 24 24"><path d="M21.707 4.805a1 1 0 0 1 0 1.414L8.024 19.902l-5.731-5.73a1 1 0 1 1 1.414-1.415l4.317 4.317L20.293 4.805a1 1 0 0 1 1.414 0z"></path></svg>
+                    Block explicit music
+                </li>
+                <li>
+                    <svg height="24" width="24" viewBox="0 0 24 24"><path d="M21.707 4.805a1 1 0 0 1 0 1.414L8.024 19.902l-5.731-5.73a1 1 0 1 1 1.414-1.415l4.317 4.317L20.293 4.805a1 1 0 0 1 1.414 0z"></path></svg>
+                    Cancel anytime
+                </li>
+                <li>
+                    <svg height="24" width="24" viewBox="0 0 24 24"><path d="M21.707 4.805a1 1 0 0 1 0 1.414L8.024 19.902l-5.731-5.73a1 1 0 1 1 1.414-1.415l4.317 4.317L20.293 4.805a1 1 0 0 1 1.414 0z"></path></svg>
+                    Subscribe or one-time payment
+                </li>
+            </ul>
+            <a href="https://www.spotify.com/in-en/plan/family/" class="button">Get Premium Family</a>
+        </div>
+    </div>
+</body>
+</html>
